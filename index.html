@@ -155,8 +155,9 @@ PRESENTS READY FOR DELIVERY:
 &lt;&lt;if $solved_sarah&gt;&gt;
 Sarah Cyper: One Action Figure (C-3PO)
 &lt;&lt;/if&gt;&gt;
-
-
+&lt;&lt;if $solved_lyra&gt;&gt;
+Lyra Curator: One T-Shirt (Custom design featuring WALL-E, from WALL-E)
+&lt;&lt;/if&gt;&gt;
 
 
 &lt;&lt;if ($solved_brian and $solved_sarah and $solved_lyra and $solved_alex)&gt;&gt;
@@ -179,8 +180,8 @@ Download these digital versions of the puzzles, and then [[start again|Start]]</
 
 Shall we agree to go our separate ways and never speak of this again?
 
-[[Yes|Error]]
-[[I guess so|Error]]</tw-passagedata><tw-passagedata pid="8" name="brian_start" tags="" position="1350,1025" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="sarah_start" tags="" position="1100,1525" size="100,100">Let&#39;s load up the NPPD file on Sarah...
+[[Yes|Start]]
+[[I guess so|Start]]</tw-passagedata><tw-passagedata pid="8" name="brian_start" tags="" position="1350,1025" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="sarah_start" tags="" position="1100,1525" size="100,100">Let&#39;s load up the NPPD file on Sarah...
 
 &lt;&lt;type $typespeed&gt;&gt;
 &lt;span style=&quot;color: #00FF33; background: #444444&quot;&gt;
@@ -430,7 +431,9 @@ I suspect the cryptic phrase has an answer - and that answer is probably either 
 
 If she hasn&#39;t specified what type of present she wants, let&#39;s fall back to what she got last year, which she enjoyed - which was a T-Shirt with a different one of her favourite characters on. 
 
-[[Yes, let&#39;s get her a WALL-E T-shirt!|lyra_correct_answer_2]]</tw-passagedata><tw-passagedata pid="37" name="lyra_correct_answer_2" tags="" position="150,1525" size="100,100">&lt;&lt;type $typespeed&gt;&gt;
+[[Yes, let&#39;s get her a WALL-E T-shirt!|lyra_correct_answer_2]]</tw-passagedata><tw-passagedata pid="37" name="lyra_correct_answer_2" tags="" position="150,1525" size="100,100">&lt;&lt;set $solved_lyra to true&gt;&gt;
+
+&lt;&lt;type $typespeed&gt;&gt;
 SOURCING T-SHIRT FABRIC...
 
 CALIBRATING SIZE... 
@@ -486,9 +489,11 @@ What could the other ones be referring to?
 &lt;&lt;type 01ms&gt;&gt;
 Consulting database...
 
-I&#39;ve discovered two games, Pokémon Red and Blue editions. 
+I&#39;ve discovered two pairs of games, Pokémon Red and Blue editions, and Gold and Silver editions. 
 
 Here are the names of all the Pokémon characters from these games: 
+
+Red/Blue
 
 Number	Name
 001	Bulbasaur
@@ -643,10 +648,113 @@ Number	Name
 150	Mewtwo
 151	Mew
 
+Gold/Silver
+
+152	Chikorita
+153	Bayleef
+154	Meganium
+155	Cyndaquil
+156	Quilava
+157	Typhlosion
+158	Totodile
+159	Croconaw
+160	Feraligatr
+161	Sentret
+162	Furret
+163	Hoothoot
+164	Noctowl
+165	Ledyba
+166	Ledian
+167	Spinarak
+168	Ariados
+169	Crobat
+170	Chinchou
+171	Lanturn
+172	Pichu
+173	Cleffa
+174	Igglybuff
+175	Togepi
+176	Togetic
+177	Natu
+178	Xatu
+179	Mareep
+180	Flaaffy
+181	Ampharos
+182	Bellossom
+183	Marill
+184	Azumarill
+185	Sudowoodo
+186	Politoed
+187	Hoppip
+188	Skiploom
+189	Jumpluff
+190	Aipom
+191	Sunkern
+192	Sunflora
+193	Yanma
+194	Wooper
+195	Quagsire
+196	Espeon
+197	Umbreon
+198	Murkrow
+199	Slowking
+200	Misdreavus
+201	Unown
+202	Wobbuffet
+203	Girafarig
+204	Pineco
+205	Forretress
+206	Dunsparce
+207	Gligar
+208	Steelix
+209	Snubbull
+210	Granbull
+211	Qwilfish
+212	Scizor
+213	Shuckle
+214	Heracross
+215	Sneasel
+216	Teddiursa
+217	Ursaring
+218	Slugma
+219	Magcargo
+220	Swinub
+221	Piloswine
+222	Corsola
+223	Remoraid
+224	Octillery
+225	Delibird
+226	Mantine
+227	Skarmory
+228	Houndour
+229	Houndoom
+230	Kingdra
+231	Phanpy
+232	Donphan
+233	Porygon2
+234	Stantler
+235	Smeargle
+236	Tyrogue
+237	Hitmontop
+238	Smoochum
+239	Elekid
+240	Magby
+241	Miltank
+242	Blissey
+243	Raikou
+244	Entei
+245	Suicune
+246	Larvitar
+247	Pupitar
+248	Tyranitar
+249	Lugia
+250	Ho-oh
+251	Celebi
+
 &lt;&lt;/type&gt;&gt;
 
 [[Back|lyra_help_4]]
-[[But there are more than two Pokémon games!|more_pokemon]]
+[[But there are more than two generations of Pokémon games!|more_pokemon]]
 </tw-passagedata><tw-passagedata pid="42" name="more_pokemon" tags="" position="625,975" size="100,100">Interesting, it appears you&#39;re right! There are hundreds and hundreds of the things, how quaint! 
 
 My gut tells me that Lyra has only played one of the games I mentioned though, so let&#39;s stick to those...
@@ -801,7 +909,7 @@ Taurus
 Raichu
 Alakazam
 Slowpoke
-Horsea
+Ho-oh
 
 &lt;&lt;/type&gt;&gt;
 
